@@ -89,13 +89,13 @@ body {
 }
 
 .home .content h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #35b8be;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home .content p {
-    font-size: 1.8rem;
+    font-size: 0.8rem;
     color: #333;
     margin: 1rem 0;
 }
@@ -116,7 +116,7 @@ body {
 }
 
 .home .image img {
-    max-width: 100%;
+    max-width: 130%;
     border-radius: 50%;
 }
 

@@ -118,8 +118,9 @@ body {
 }
 
 .home .image img {
-    max-width: 150%;
+    max-width: 100%;
     border-radius: 50%;
+  gap: 20px;
 }
 
 /* Icons Section */

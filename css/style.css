@@ -477,7 +477,6 @@ body {
 .blogs .box .btn:hover {
     background-color: #1d6f72;
 }
-
 /* Footer Section */
 .footer {
     padding: 2rem 9%;
@@ -487,6 +486,8 @@ body {
 
 .footer h1 {
     color: white;
+    font-size: 2.5rem; /* Adjusted for better visibility */
+    margin-bottom: 1.5rem;
 }
 
 .footer .btn {
@@ -495,13 +496,53 @@ body {
     background-color: white;
     color: #35b8be;
     border-radius: 5rem;
+    border: 2px solid transparent; /* Adding border for hover effect */
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .footer .btn:hover {
-    background-color: #1d6f72;
+    background-color: #1d6f72; /* Darker color on hover */
     color: white;
+    border-color: white; /* Border transition for a clean effect */
 }
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 1000;
+    background-color: #299cac;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for better visibility */
+}
+
+.chatbot-icon:hover {
+    background-color: #175052;
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.chatbot-icon i {
+    font-size: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .chatbot-icon {
+        bottom: 20px;
+        right: 20px;
+        padding: 15px;
+    }
+
+    .chatbot-icon i {
+        font-size: 40px;
+    }
+}
+
 
 /* Media Queries */
 @media (max-width: 991px) {

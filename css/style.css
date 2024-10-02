@@ -82,6 +82,7 @@ body {
     padding: 10rem 9%;
     background: linear-gradient(135deg, #eaf2f8 30%, #f0f0f5 70%);
     min-height: 100vh;
+     gap: 5rem;
 }
 
 .home .content {

@@ -82,7 +82,6 @@ body {
     padding: 10rem 9%;
     background: linear-gradient(135deg, #eaf2f8 30%, #f0f0f5 70%);
     min-height: 100vh;
-     gap: 5rem;
 }
 
 .home .content {
@@ -90,15 +89,15 @@ body {
 }
 
 .home .content h3 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #35b8be;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home .content p {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     color: #333;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .home .btn {
@@ -117,9 +116,8 @@ body {
 }
 
 .home .image img {
-    max-width: 130%;
+    max-width: 100%;
     border-radius: 50%;
-     margin-left: 5rem;
 }
 
 /* Icons Section */

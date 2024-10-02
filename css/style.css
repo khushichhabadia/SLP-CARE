@@ -4,42 +4,41 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    border: none;
     text-decoration: none;
     transition: all 0.2s ease;
     font-family: 'Georgia', serif;
-  }
-  
-  html {
+}
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
     overflow-x: hidden;
-  }
-  
-  body {
+}
+
+body {
     background-color: #f0f0f5;
-  }  
+}
+
 /* Header Styles */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: #35b8be;
+    background-color: #35b8be;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 9%;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
     font-size: 2.5rem;
     font-weight: bold;
     color: white;
-    margin: 0;
 }
 
 .header .navbar {
@@ -52,7 +51,7 @@
     color: white;
     margin: 0 1.5rem;
     text-transform: capitalize;
-    position: relative; /* For hover effect */
+    position: relative;
 }
 
 .header .navbar a:hover {
@@ -92,7 +91,7 @@
 .home .content h3 {
     font-size: 4rem;
     color: #35b8be;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home .content p {
@@ -107,18 +106,17 @@
     background-color: #35b8be;
     color: white;
     border-radius: 5rem;
-    display: inline-block;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .home .btn:hover {
     background-color: #1d6f72;
-    transform: translateY(-2px); /* Slight lift effect */
+    transform: translateY(-2px);
 }
 
 .home .image img {
-    max-width: 200%;
+    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -127,7 +125,7 @@
     display: flex;
     justify-content: space-around;
     padding: 4rem 9%;
-    background-color: #35b8be; /* Updated color */
+    background-color: #35b8be;
 }
 
 .icons-container .icons {
@@ -178,7 +176,7 @@
 
 .services .box i {
     font-size: 4rem;
-    color: #35b8be; /* Updated color */
+    color: #35b8be;
 }
 
 .services .box h3 {
@@ -202,7 +200,7 @@
 }
 
 .services .btn:hover {
-    background-color: #1d6f72; /* Updated hover color */
+    background-color: #1d6f72;
 }
 
 /* About Section */
@@ -259,13 +257,13 @@
 }
 
 .about .btn:hover {
-    background-color: #1d6f72; /* Updated hover color */
+    background-color: #1d6f72;
 }
 
 /* Therapists Section */
 .therapists {
     padding: 10rem 9%;
-    background-color: #fff;
+    background-color: white;
 }
 
 .therapists .heading {
@@ -312,7 +310,7 @@
 }
 
 .therapists .box .share a:hover {
-    color: #1d6f72; /* Updated hover color */
+    color: #1d6f72;
 }
 
 /* Booking Section */
@@ -320,12 +318,14 @@
     padding: 10rem 9%;
     background-color: #f0f0f5;
 }
+
 .book .heading {
     font-size: 4rem;
     color: #35b8be;
     text-align: center;
     margin-bottom: 6rem;
 }
+
 .book .row {
     display: flex;
     gap: 2rem;
@@ -334,7 +334,7 @@
 
 .book .image img {
     width: 100%;
-   border-radius: 50%;
+    border-radius: 50%;
 }
 
 .book form {
@@ -367,13 +367,13 @@
 }
 
 .book form .btn:hover {
-    background-color: #1d6f72; /* Updated hover color */
+    background-color: #1d6f72;
 }
 
 /* Reviews Section */
 .review {
     padding: 10rem 9%;
-    background-color: #fff;
+    background-color: white;
 }
 
 .review .heading {
@@ -385,16 +385,28 @@
 
 .review .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
 }
 
 .review .box {
-    padding: 2rem;
     text-align: center;
     background-color: #eaf2f8;
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review .box img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.review .box h3 {
+    font-size: 2.5rem;
+    color: #35b8be;
+    margin: 1rem 0;
 }
 
 .review .box p {
@@ -402,278 +414,120 @@
     color: #333;
 }
 
-/* Contact Section */
-.contact {
-    padding: 10rem 9%;
-    background-color: white;
+.review .box .stars i {
+    font-size: 1.5rem;
+    color: #35b8be;
 }
 
-.contact .heading {
+/* Blogs Section */
+.blogs {
+    padding: 10rem 9%;
+    background-color: #f0f0f5;
+}
+
+.blogs .heading {
     font-size: 4rem;
     color: #35b8be;
     text-align: center;
     margin-bottom: 6rem;
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
 }
 
-.contact form .box {
+.blogs .box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blogs .box img {
     width: 100%;
-    padding: 1rem;
-    margin: 1rem 0;
-    border: 1px solid #ccc;
-    font-size: 1.5rem;
-    border-radius: 0.5rem;
+    height: 20rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
-.contact form .btn {
+.blogs .box h3 {
+    font-size: 2.5rem;
+    color: #35b8be;
+    margin: 1rem 0;
+}
+
+.blogs .box p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.blogs .box .btn {
     padding: 1rem 3rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-color: #35b8be;
     color: white;
     border-radius: 5rem;
     cursor: pointer;
 }
 
-.contact form .btn:hover {
-    background-color: #1d6f72; /* Updated hover color */
+.blogs .box .btn:hover {
+    background-color: #1d6f72;
 }
+
 /* Footer Section */
 .footer {
-    padding: 4rem 9%;
+    padding: 2rem 9%;
     background-color: #35b8be;
-    color: white;
     text-align: center;
 }
 
-.footer p {
-    font-size: 2.5rem;
-}
-.footer .box-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer .box {
-    flex: 1;
-    padding: 20px;
-}
-
-.footer .box h3 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.footer .box a {
+.footer h1 {
     color: white;
-    font-size: 2rem;
-    display: block;
-    margin: 5px 0;
-    transition: color 0.3s ease;
 }
 
-.footer .box a:hover {
-    color: #23696d;
-}
-
-    /* Chatbot Icon CSS */
-    .chatbot-icon {
-        position: fixed;
-        bottom: 30px;
-        right: 40px;
-        z-index: 1000;
-        background-color: #299cac;
-        color: white;
-        padding: 20px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        
-    }
-
-    .chatbot-icon:hover {
-        background-color: #175052;
-    }
-
-    .chatbot-icon i {
-        font-size: 50px;
-    }
-
-
-      
-  /* Keyframes for animations */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  /* Responsive Media Queries */
-  @media (max-width: 1200px) {
-    html {
-      font-size: 58%;
-    }
-  
-    .home {
-      flex-direction: column;
-      padding: 5rem 5%;
-    }
-  
-    .services .box-container {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    html {
-      font-size: 55%;
-    }
-  
-    .header .navbar a {
-      font-size: 1.3rem;
-      margin: 0 1rem;
-    }
-  
-    .home .content h3 {
-      font-size: 3.5rem;
-    }
-  
-    .icons-container {
-      flex-direction: column;
-      gap: 2rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    html {
-      font-size: 50%;
-    }
-  
-    .home {
-      padding: 3rem 2%;
-    }
-  
-    .header .navbar {
-      display: none; /* Hides navbar for small screens */
-    }
-  
-    .home .content h3 {
-      font-size: 3rem;
-    }
-  
-    .icons-container {
-      flex-direction: column;
-      gap: 2rem;
-    }
-  }
-  
-  /* Header Styles */
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #35b8be;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 9%;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: slideIn 1s ease-in-out;
-  }
-  
-  .header .logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
-    margin: 0;
-  }
-  
-  .header .navbar a:hover::after {
-    width: 100%;
-  }
-  
-  .header .navbar a {
-    font-size: 1.5rem;
-    color: white;
-    margin: 0 1.5rem;
-    text-transform: capitalize;
-  }
-  
-  /* Home Section */
-  .home {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10rem 9%;
-    background: linear-gradient(135deg, #eaf2f8 30%, #f0f0f5 70%);
-    min-height: 100vh;
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  .home .content h3 {
-    font-size: 4rem;
+.footer .btn {
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    background-color: white;
     color: #35b8be;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    animation: slideIn 1s ease-in-out;
-  }
-  
-  .home .btn:hover {
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.footer .btn:hover {
     background-color: #1d6f72;
-    transform: translateY(-2px);
-    animation: pulse 0.6s ease-in-out infinite;
-  }
-  
-  /* Icons Section */
-  .icons-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 4rem 9%;
-    background-color: #35b8be;
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
-  /* Services Section */
-  .services .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 3rem;
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
-  .services .box {
-    animation: fadeIn 1s ease-in-out;
-  }
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .home {
+        padding: 5rem 2rem;
+    }
+
+    .services,
+    .about,
+    .therapists,
+    .book,
+    .review,
+    .blogs {
+        padding: 5rem 2rem;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 1rem 3%;
+    }
+
+    .header .navbar a {
+        margin: 1rem;
+    }
+
+    .header .logo {
+        margin-bottom: 1rem;
+    }
+}
